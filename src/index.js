@@ -1,15 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { ApolloProvider } from '@apollo/client';
-import client from './graphql/client';
-import App from './App';
+import App from './components/App';  // Проверьте, что путь правильный
+import './index.css';  // Ваш CSS файл для глобальных стилей
+import './styles/global.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <ApolloProvider client={client}>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  </ApolloProvider>
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 );
+
+
+
 
