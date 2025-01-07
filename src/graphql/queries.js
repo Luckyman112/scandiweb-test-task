@@ -1,26 +1,23 @@
-import { gql } from '@apollo/client';
+import { useQuery } from '@apollo/client';
+import { GET_PRODUCTS } from '../graphql/queries';
 
-export const GET_CATEGORIES = gql`
-  query {
-    categories {
-      id
-      name
-    }
-  }
-`;
+const ProductsList = () => {
+  const { loading, error, data } = useQuery(GET_PRODUCTS);
 
-export const GET_PRODUCTS = gql`
-  query {
-    products {
-      id
-      name
-      description
-      price
-      brand
-      inStock
-    }
-  }
-`;
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error.message}</p>;
+
+  return (
+    <ul>
+      {data.products.map(product => (
+        <li key={product.id}>{product.name} - ${product.price}</li>
+      ))}
+    </ul>
+  );
+};
+
+export default ProductsList;
+
 
 
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './components/App';  // Проверьте, что путь правильный
+import App from '../frontend/components/App';  // Проверьте, что путь правильный
 import './index.css';  // Ваш CSS файл для глобальных стилей
 import './styles/global.css';
 

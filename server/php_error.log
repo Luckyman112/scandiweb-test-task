@@ -1,0 +1,49 @@
+[06-Jan-2025 23:45:08 UTC] Update error: No product found with the provided ID
+[06-Jan-2025 23:55:06 UTC] PHP Warning:  Trying to access array offset on null in C:\Projects\scandiweb-test-task\server\index.php on line 226
+[06-Jan-2025 23:55:06 UTC] PHP Fatal error:  Uncaught TypeError: GraphQL\Language\Source::__construct(): Argument #1 ($body) must be of type string, null given, called in C:\Projects\scandiweb-test-task\vendor\webonyx\graphql-php\src\GraphQL.php on line 140 and defined in C:\Projects\scandiweb-test-task\vendor\webonyx\graphql-php\src\Language\Source.php:24
+Stack trace:
+#0 C:\Projects\scandiweb-test-task\vendor\webonyx\graphql-php\src\GraphQL.php(140): GraphQL\Language\Source->__construct(NULL, 'GraphQL')
+#1 C:\Projects\scandiweb-test-task\vendor\webonyx\graphql-php\src\GraphQL.php(97): GraphQL\GraphQL::promiseToExecute(Object(GraphQL\Executor\Promise\Adapter\SyncPromiseAdapter), Object(GraphQL\Type\Schema), NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#2 C:\Projects\scandiweb-test-task\server\index.php(228): GraphQL\GraphQL::executeQuery(Object(GraphQL\Type\Schema), NULL)
+#3 {main}
+  thrown in C:\Projects\scandiweb-test-task\vendor\webonyx\graphql-php\src\Language\Source.php on line 24
+[06-Jan-2025 23:55:06 UTC] PHP Warning:  Trying to access array offset on null in C:\Projects\scandiweb-test-task\server\index.php on line 226
+[06-Jan-2025 23:55:06 UTC] PHP Fatal error:  Uncaught TypeError: GraphQL\Language\Source::__construct(): Argument #1 ($body) must be of type string, null given, called in C:\Projects\scandiweb-test-task\vendor\webonyx\graphql-php\src\GraphQL.php on line 140 and defined in C:\Projects\scandiweb-test-task\vendor\webonyx\graphql-php\src\Language\Source.php:24
+Stack trace:
+#0 C:\Projects\scandiweb-test-task\vendor\webonyx\graphql-php\src\GraphQL.php(140): GraphQL\Language\Source->__construct(NULL, 'GraphQL')
+#1 C:\Projects\scandiweb-test-task\vendor\webonyx\graphql-php\src\GraphQL.php(97): GraphQL\GraphQL::promiseToExecute(Object(GraphQL\Executor\Promise\Adapter\SyncPromiseAdapter), Object(GraphQL\Type\Schema), NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#2 C:\Projects\scandiweb-test-task\server\index.php(228): GraphQL\GraphQL::executeQuery(Object(GraphQL\Type\Schema), NULL)
+#3 {main}
+  thrown in C:\Projects\scandiweb-test-task\vendor\webonyx\graphql-php\src\Language\Source.php on line 24
+[06-Jan-2025 23:55:24 UTC] PHP Warning:  Trying to access array offset on null in C:\Projects\scandiweb-test-task\server\index.php on line 226
+[06-Jan-2025 23:55:24 UTC] PHP Fatal error:  Uncaught TypeError: GraphQL\Language\Source::__construct(): Argument #1 ($body) must be of type string, null given, called in C:\Projects\scandiweb-test-task\vendor\webonyx\graphql-php\src\GraphQL.php on line 140 and defined in C:\Projects\scandiweb-test-task\vendor\webonyx\graphql-php\src\Language\Source.php:24
+Stack trace:
+#0 C:\Projects\scandiweb-test-task\vendor\webonyx\graphql-php\src\GraphQL.php(140): GraphQL\Language\Source->__construct(NULL, 'GraphQL')
+#1 C:\Projects\scandiweb-test-task\vendor\webonyx\graphql-php\src\GraphQL.php(97): GraphQL\GraphQL::promiseToExecute(Object(GraphQL\Executor\Promise\Adapter\SyncPromiseAdapter), Object(GraphQL\Type\Schema), NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#2 C:\Projects\scandiweb-test-task\server\index.php(228): GraphQL\GraphQL::executeQuery(Object(GraphQL\Type\Schema), NULL)
+#3 {main}
+  thrown in C:\Projects\scandiweb-test-task\vendor\webonyx\graphql-php\src\Language\Source.php on line 24
+[06-Jan-2025 23:55:24 UTC] PHP Warning:  Trying to access array offset on null in C:\Projects\scandiweb-test-task\server\index.php on line 226
+[06-Jan-2025 23:55:24 UTC] PHP Fatal error:  Uncaught TypeError: GraphQL\Language\Source::__construct(): Argument #1 ($body) must be of type string, null given, called in C:\Projects\scandiweb-test-task\vendor\webonyx\graphql-php\src\GraphQL.php on line 140 and defined in C:\Projects\scandiweb-test-task\vendor\webonyx\graphql-php\src\Language\Source.php:24
+Stack trace:
+#0 C:\Projects\scandiweb-test-task\vendor\webonyx\graphql-php\src\GraphQL.php(140): GraphQL\Language\Source->__construct(NULL, 'GraphQL')
+#1 C:\Projects\scandiweb-test-task\vendor\webonyx\graphql-php\src\GraphQL.php(97): GraphQL\GraphQL::promiseToExecute(Object(GraphQL\Executor\Promise\Adapter\SyncPromiseAdapter), Object(GraphQL\Type\Schema), NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#2 C:\Projects\scandiweb-test-task\server\index.php(228): GraphQL\GraphQL::executeQuery(Object(GraphQL\Type\Schema), NULL)
+#3 {main}
+  thrown in C:\Projects\scandiweb-test-task\vendor\webonyx\graphql-php\src\Language\Source.php on line 24
+[06-Jan-2025 23:55:25 UTC] PHP Warning:  Trying to access array offset on null in C:\Projects\scandiweb-test-task\server\index.php on line 226
+[06-Jan-2025 23:55:25 UTC] PHP Fatal error:  Uncaught TypeError: GraphQL\Language\Source::__construct(): Argument #1 ($body) must be of type string, null given, called in C:\Projects\scandiweb-test-task\vendor\webonyx\graphql-php\src\GraphQL.php on line 140 and defined in C:\Projects\scandiweb-test-task\vendor\webonyx\graphql-php\src\Language\Source.php:24
+Stack trace:
+#0 C:\Projects\scandiweb-test-task\vendor\webonyx\graphql-php\src\GraphQL.php(140): GraphQL\Language\Source->__construct(NULL, 'GraphQL')
+#1 C:\Projects\scandiweb-test-task\vendor\webonyx\graphql-php\src\GraphQL.php(97): GraphQL\GraphQL::promiseToExecute(Object(GraphQL\Executor\Promise\Adapter\SyncPromiseAdapter), Object(GraphQL\Type\Schema), NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#2 C:\Projects\scandiweb-test-task\server\index.php(228): GraphQL\GraphQL::executeQuery(Object(GraphQL\Type\Schema), NULL)
+#3 {main}
+  thrown in C:\Projects\scandiweb-test-task\vendor\webonyx\graphql-php\src\Language\Source.php on line 24
+[06-Jan-2025 23:55:25 UTC] PHP Warning:  Trying to access array offset on null in C:\Projects\scandiweb-test-task\server\index.php on line 226
+[06-Jan-2025 23:55:25 UTC] PHP Fatal error:  Uncaught TypeError: GraphQL\Language\Source::__construct(): Argument #1 ($body) must be of type string, null given, called in C:\Projects\scandiweb-test-task\vendor\webonyx\graphql-php\src\GraphQL.php on line 140 and defined in C:\Projects\scandiweb-test-task\vendor\webonyx\graphql-php\src\Language\Source.php:24
+Stack trace:
+#0 C:\Projects\scandiweb-test-task\vendor\webonyx\graphql-php\src\GraphQL.php(140): GraphQL\Language\Source->__construct(NULL, 'GraphQL')
+#1 C:\Projects\scandiweb-test-task\vendor\webonyx\graphql-php\src\GraphQL.php(97): GraphQL\GraphQL::promiseToExecute(Object(GraphQL\Executor\Promise\Adapter\SyncPromiseAdapter), Object(GraphQL\Type\Schema), NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#2 C:\Projects\scandiweb-test-task\server\index.php(228): GraphQL\GraphQL::executeQuery(Object(GraphQL\Type\Schema), NULL)
+#3 {main}
+  thrown in C:\Projects\scandiweb-test-task\vendor\webonyx\graphql-php\src\Language\Source.php on line 24
