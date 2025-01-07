@@ -21,7 +21,7 @@ const typeDefs = gql`
     name: String!
     price: Float!
     description: String
-    inStock: Boolean!
+    inStock: Boolean
     categoryId: ID!
     brand: String
   }

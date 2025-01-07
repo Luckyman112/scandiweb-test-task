@@ -1,28 +1,16 @@
 import React from 'react';
-import { useQuery, gql } from '@apollo/client';
-import ProductCard from '../components/ProductCard';
+import ProductCard from './ProductCard';
+import { theme } from '../styles/theme';
 
-const GET_PRODUCTS = gql`
-  query {
-    products {
-      id
-      name
-      price
-      description
-      inStock
-    }
-  }
-`;
-
-function ProductsList() {
-  const { loading, error, data } = useQuery(GET_PRODUCTS);
-
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error: {error.message}</p>;
-
+function ProductsList({ products }) {
   return (
-    <div>
-      {data.products.map((product) => (
+    <div style={{
+      display: 'grid',
+      gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+      gap: theme.spacing.medium,
+      padding: theme.spacing.medium,
+    }}>
+      {products.map((product) => (
         <ProductCard key={product.id} product={product} />
       ))}
     </div>
@@ -30,3 +18,4 @@ function ProductsList() {
 }
 
 export default ProductsList;
+
