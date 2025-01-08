@@ -4,7 +4,7 @@ import ProductCard from './ProductCard';
 import './ProductsList.css';
 
 const GET_PRODUCTS = gql`
-  query GetProducts {
+  query {
     products {
       id
       name
@@ -15,19 +15,29 @@ const GET_PRODUCTS = gql`
   }
 `;
 
-function ProductsList() {
+function ProductsList({ addToCart }) {
   const { loading, error, data } = useQuery(GET_PRODUCTS);
 
-  if (loading) return <p>Loading products...</p>;
+  if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error.message}</p>;
 
   return (
     <div className="products-list">
       {data.products.map((product) => (
-        <ProductCard key={product.id} product={product} />
+        <div key={product.id} className="product-item">
+          <ProductCard product={product} />
+          <button
+            className="add-to-cart-button"
+            onClick={() => addToCart(product)}
+            disabled={!product.inStock}
+          >
+            {product.inStock ? 'Add to Cart' : 'Out of Stock'}
+          </button>
+        </div>
       ))}
     </div>
   );
 }
 
 export default ProductsList;
+
