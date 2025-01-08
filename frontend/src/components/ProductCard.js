@@ -1,28 +1,13 @@
 import React from 'react';
-import { theme } from '../styles/theme'; // Импортируйте файл theme.js
+import './ProductCard.css';
 
 function ProductCard({ product }) {
   return (
-    <div style={{
-      border: `1px solid ${theme.colors.secondary}`,
-      borderRadius: '8px',
-      padding: theme.spacing.medium,
-      marginBottom: theme.spacing.medium,
-      backgroundColor: theme.colors.secondary,
-    }}>
-      <h2 style={{
-        fontSize: '18px',
-        fontWeight: 'bold',
-        color: theme.colors.text,
-      }}>
-        {product.name}
-      </h2>
-      <p style={{
-        fontSize: '16px',
-        color: theme.colors.primary,
-      }}>
-        Price: ${product.price}
-      </p>
+    <div className="product-card">
+      <h2>{product.name}</h2>
+      <p>Price: ${product.price}</p>
+      <p dangerouslySetInnerHTML={{ __html: product.description }} />
+      <p>{product.inStock ? 'In Stock' : 'Out of Stock'}</p>
     </div>
   );
 }

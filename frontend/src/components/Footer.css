@@ -1,20 +1,7 @@
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ff5722;
-    color: #fff;
-    padding: 1rem 2rem;
-    font-size: 0.9rem;
-  }
-  
-  .footer nav a {
-    margin-left: 1rem;
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  .footer nav a:hover {
-    text-decoration: underline;
-  }
-  
+footer {
+  background-color: #ff5722;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+}

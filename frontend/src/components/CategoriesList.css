@@ -1,0 +1,25 @@
+.categories-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+  
+  .categories-list li {
+    padding: 0.5rem 1rem;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .categories-list li:hover {
+    background-color: #ff5722;
+    color: #fff;
+    transform: scale(1.05);
+  }
+  
+  

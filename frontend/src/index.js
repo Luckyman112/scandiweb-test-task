@@ -1,17 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './components/App';
-import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
+import App from './App';
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import './styles/global.css';
 
-// Создание Apollo Client
 const client = new ApolloClient({
-  uri: 'http://localhost:4000', // URL твоего GraphQL-сервера
+  uri: 'http://localhost:4000/graphql',
   cache: new InMemoryCache(),
 });
 
-// Рендеринг приложения
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

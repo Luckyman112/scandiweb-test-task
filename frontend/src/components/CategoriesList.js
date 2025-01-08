@@ -1,8 +1,9 @@
 import React from 'react';
 import { useQuery, gql } from '@apollo/client';
+import './CategoriesList.css';
 
 const GET_CATEGORIES = gql`
-  query {
+  query GetCategories {
     categories {
       id
       name
@@ -13,14 +14,11 @@ const GET_CATEGORIES = gql`
 function CategoriesList() {
   const { loading, error, data } = useQuery(GET_CATEGORIES);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <p>Loading categories...</p>;
   if (error) return <p>Error: {error.message}</p>;
 
-  // Проверьте, если data.categories не определен
-  if (!data || !data.categories) return <p>No categories available</p>;
-
   return (
-    <ul>
+    <ul className="categories-list">
       {data.categories.map((category) => (
         <li key={category.id}>{category.name}</li>
       ))}
