@@ -1,10 +1,11 @@
 import React from 'react';
-import './Footer.css';
+import '../styles/Footer.css';
+
 
 function Footer() {
   return (
     <footer className="footer">
-      <p>© {new Date().getFullYear()} My E-commerce App</p>
+      <p>© 2025 My E-commerce App</p>
     </footer>
   );
 }

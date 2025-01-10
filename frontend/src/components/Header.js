@@ -1,17 +1,17 @@
 import React from 'react';
-import './Header.css';
+import '../styles/Header.css';
 
-const Header = () => (
-  <header className="header">
-    <div className="container">
-      <h1 className="logo">My E-commerce App</h1>
-      <nav className="nav">
-        <a href="#categories">Categories</a>
-        <a href="#products">Products</a>
-        <a href="#contact">Contact</a>
+
+function Header() {
+  return (
+    <header className="header">
+      <h1>My E-commerce App</h1>
+      <nav>
+        <a href="/">Categories</a>
+        <a href="/cart">Cart</a>
       </nav>
-    </div>
-  </header>
-);
+    </header>
+  );
+}
 
 export default Header;

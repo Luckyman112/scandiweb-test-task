@@ -1,21 +1,25 @@
 import React from 'react';
 import { useQuery, gql } from '@apollo/client';
 import ProductCard from './ProductCard';
-import './ProductsList.css';
+import '../styles/ProductsList.css';
 
 const GET_PRODUCTS = gql`
-  query {
+  query GetProducts {
     products {
       id
       name
       price
       description
       inStock
+      gallery{
+        product_url
+      }
     }
   }
 `;
 
-function ProductsList({ addToCart }) {
+
+function ProductsList() {
   const { loading, error, data } = useQuery(GET_PRODUCTS);
 
   if (loading) return <p>Loading...</p>;
@@ -24,20 +28,10 @@ function ProductsList({ addToCart }) {
   return (
     <div className="products-list">
       {data.products.map((product) => (
-        <div key={product.id} className="product-item">
-          <ProductCard product={product} />
-          <button
-            className="add-to-cart-button"
-            onClick={() => addToCart(product)}
-            disabled={!product.inStock}
-          >
-            {product.inStock ? 'Add to Cart' : 'Out of Stock'}
-          </button>
-        </div>
+        <ProductCard key={product.id} product={product} />
       ))}
     </div>
   );
 }
 
 export default ProductsList;
-
