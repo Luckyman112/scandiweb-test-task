@@ -1,18 +1,22 @@
 import React from 'react';
+import { ApolloProvider } from '@apollo/client';
+import client from './graphql/graphql';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import CartPage from './pages/CartPage';
 import Header from './components/Header';
-import Footer from './components/Footer';
-import ProductsList from './components/ProductsList';
-import './styles/global.css';
 
 function App() {
   return (
-    <div>
-      <Header />
-      <main>
-        <ProductsList />
-      </main>
-      <Footer />
-    </div>
+    <ApolloProvider client={client}>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/cart" element={<CartPage />} />
+        </Routes>
+      </Router>
+    </ApolloProvider>
   );
 }
 
